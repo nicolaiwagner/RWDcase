@@ -1,0 +1,87 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.headline{
+  text-align: center;
+  border: 0px;
+  margin: 0px;
+}
+.menu {
+  display: inline;
+  width: 20%;
+  border: 1px solid #555;
+  background-color: #94d1e0;
+  font-family:fantasy;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+  display: block;
+  background-color: #dddddd;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+.menuitem:last-child {
+    border-bottom: none;
+  }
+a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+a:hover {
+    background-color: #555;
+    color: white;
+  }
+.main {
+  margin-right: 10%;
+  width: 50%;
+  padding: 0px 20px;
+  overflow: hidden;
+  list-style-type: none;
+  left: 0;
+}
+.text_box {
+  background-color: lightblue;
+  width:40%;
+  padding: 5px 15px;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: left;
+  height: auto;
+}
+.flex{
+  display: flex;
+}
+
+
+
+@media only screen and (max-width:880px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+  .flex{
+    display: block;
+
+  }
+  .text_box{
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width:640px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
